@@ -14,7 +14,9 @@ import ConsentField from "./components/ConsentField.vue";
 
 const state = reactive({ ...emptyCatalogForm });
 
-const brochureUrl = getMediaURL("/pdf/boholz-hauskatalog.pdf");
+// Version query busts Cloudflare's edge cache (max-age 30d) when the PDF is
+// swapped. Bump the date whenever /pdf/boholz-hauskatalog.pdf is replaced.
+const brochureUrl = getMediaURL("/pdf/boholz-hauskatalog.pdf") + "?v=2026-07-28";
 const brochureCoverUrl = getMediaURL("/pdf/boholz-hauskatalog-cover.webp");
 
 const turnstileToken = ref("");
