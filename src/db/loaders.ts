@@ -1,4 +1,4 @@
-import { eq, inArray, not } from "drizzle-orm";
+import { and, eq, inArray, not } from "drizzle-orm";
 
 import { db } from "@/db/db";
 import { houseCategories, houseModels, news } from "@/db/schema";
@@ -70,6 +70,9 @@ export async function getCategories(): Promise<HouseCategory[]> {
 
 export async function getModels(): Promise<HouseModel[]> {
   const data = await db.query.houseModels.findMany({
+    // Hidden houses (is_hidden = true) are pulled from every listing. Toggle
+    // back on by setting boholz.house_models.is_hidden = false.
+    where: eq(houseModels.isHidden, false),
     with: {
       category: true,
       details: true,
@@ -102,7 +105,9 @@ export async function getModelBySlug(
   slug: string,
 ): Promise<HouseModel | undefined> {
   const data = await db.query.houseModels.findFirst({
-    where: eq(houseModels.slug, slug),
+    // A hidden house returns undefined here too, so /haus/<slug> redirects to
+    // /hauser instead of rendering the detail page.
+    where: and(eq(houseModels.slug, slug), eq(houseModels.isHidden, false)),
     with: {
       category: true,
       details: true,
@@ -194,7 +199,7 @@ export async function getLocations(opts?: {
 
 export async function getHeroSlides(limit = 6): Promise<HeroSlide[]> {
   const rows = await db.query.houseModels.findMany({
-    where: (m, { eq }) => eq(m.isFeatured, true),
+    where: (m, { eq, and }) => and(eq(m.isFeatured, true), eq(m.isHidden, false)),
     orderBy: (m, { asc }) => asc(m.title),
     limit,
     with: {
