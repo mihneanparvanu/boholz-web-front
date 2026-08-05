@@ -58,6 +58,10 @@ export const houseModels = boholzSchema.table("house_models", {
   // 5. Bestseller toggle — see src/lib/bestseller.ts
   isFeatured: boolean("is_featured").default(false),
 
+  // 5b. Visibility — true pulls the house from all listings + detail page
+  // (reversible off-switch, e.g. for legal/image issues). See db/loaders.ts.
+  isHidden: boolean("is_hidden").default(false),
+
   // 6. Back-office only — not on detail page, not in filters
   totalArea: numeric("total_area"),
 
