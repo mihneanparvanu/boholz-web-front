@@ -132,9 +132,9 @@ export const uebersichtContent: LandingPageContent = {
     heading: "Für jedes Leben",
     highlight: "das passende Haus.",
     lede: "Egal in welcher Lebensphase Sie planen — wir entwickeln das Raumkonzept gemeinsam mit Ihnen.",
-    imageFallbackPath: "/images/landing/uebersicht/lifestyle-05.webp",
-    imageAlt:
-      "BoHolz-Bauvorhaben in Ilshofen — Luftaufnahme eines fertiggestellten Holzfertighauses",
+    imageFallbackPath:
+      "/images/models/mehrfamilienhaus/satteldorf/satteldorf-12-familienhaus.webp",
+    imageAlt: "BoHolz Mehrfamilienhaus — 12-Familienwohnhaus",
     allowPlaceholder: true,
   },
 
