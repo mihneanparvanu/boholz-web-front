@@ -36,7 +36,9 @@ export const architekturBeats: ArchBeat[] = [
     eyebrow: "Fassade",
     heading: "Außen, wie Sie es sich vorstellen.",
     body: "Klassisch verputzt, mit Holzakzenten oder vollflächig in Holz — die Fassade definiert den ersten Eindruck. Aus einer abgestimmten Palette wählen Sie Materialien, Farben und Proportionen, die zum Ort passen.",
-    imageURL: getMediaURL("/images/landing/uebersicht/lifestyle-04.webp"),
+    imageURL: getMediaURL(
+      "/images/models/kubus/0-166/gallery/kubus-0-166-gallery-kubus-166-0-0.webp",
+    ),
     imageAlt:
       "Moderne Holzfassade eines BoHolz-Hauses — wählbare Materialität für die Außenwirkung",
   },
@@ -44,9 +46,11 @@ export const architekturBeats: ArchBeat[] = [
     eyebrow: "Innen & außen",
     heading: "Aus einer Hand, ohne Übergabeverluste.",
     body: "Wer plant, baut. Vom ersten Skizzenstrich bis zur fertigen Innenraumgestaltung bleibt das Projekt in einer Hand — keine Schnittstellen zwischen Architekt, Generalunternehmer und Innenausbau, keine Reibungsverluste in Detail und Termin.",
-    imageURL: getMediaURL("/images/landing/uebersicht/lifestyle-05.webp"),
+    imageURL: getMediaURL(
+      "/images/models/mehrfamilienhaus/satteldorf/satteldorf-12-familienhaus.webp",
+    ),
     imageAlt:
-      "Detailliert ausgestalteter Wohnraum — Innenausbau und Architektur aus einer Hand",
+      "BoHolz Mehrfamilienhaus — 12-Familienwohnhaus",
   },
 ];
 
