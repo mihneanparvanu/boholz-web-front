@@ -15,9 +15,10 @@ import ConsentField from "./components/ConsentField.vue";
 const state = reactive({ ...emptyCatalogForm });
 
 // Version query busts Cloudflare's edge cache (max-age 30d) when the PDF is
-// swapped. Bump the date whenever /pdf/boholz-hauskatalog.pdf is replaced.
-const brochureUrl = getMediaURL("/pdf/boholz-hauskatalog.pdf") + "?v=2026-07-28";
-const brochureCoverUrl = getMediaURL("/pdf/boholz-hauskatalog-cover.webp");
+// swapped. Bump the date whenever /pdf/boholz-imagebroschuere.pdf is replaced.
+const brochureUrl =
+  getMediaURL("/pdf/boholz-imagebroschuere.pdf") + "?v=2026-08-17";
+const brochureCoverUrl = getMediaURL("/pdf/boholz-imagebroschuere-cover.webp");
 
 const turnstileToken = ref("");
 const SITE_KEY = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
@@ -111,20 +112,20 @@ async function onSubmit() {
       class="submit"
       :disabled="!turnstileToken || !isValid || submitting"
     >
-      {{ submitting ? "Wird gesendet..." : "Katalog anfordern" }}
+      {{ submitting ? "Wird gesendet..." : "Katalog bestellen" }}
     </button>
   </form>
 
   <div v-else class="success" role="status">
     <h3>Vielen Dank!</h3>
     <p>
-      Ihre Katalog-Anfrage ist bei uns eingegangen. Sie können den Hauskatalog
+      Ihre Katalog-Anfrage ist bei uns eingegangen. Sie können den Katalog
       direkt hier herunterladen — wir melden uns zudem persönlich bei Ihnen.
     </p>
 
     <img
       :src="brochureCoverUrl"
-      alt="BoHolz Hauskatalog — Titelseite"
+      alt="BoHolz Katalog — Titelseite"
       class="cover"
       width="240"
       height="339"
@@ -132,7 +133,7 @@ async function onSubmit() {
     />
 
     <a :href="brochureUrl" download class="download">
-      Hauskatalog herunterladen (PDF)
+      Katalog herunterladen (PDF)
     </a>
   </div>
 </template>
