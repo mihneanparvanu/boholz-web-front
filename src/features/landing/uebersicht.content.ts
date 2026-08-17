@@ -78,7 +78,7 @@ export const uebersichtContent: LandingPageContent = {
     imageFallbackPath: "/images/brand/hero.webp",
     preferredCategorySlug: "einfamilienhaus",
     primaryCta: { label: "Persönliches Angebot anfragen", href: "/kontakt" },
-    secondaryCta: { label: "Hauskatalog bestellen", href: "/katalog" },
+    secondaryCta: { label: "Katalog bestellen", href: "/katalog" },
   },
 
   benefitsIntro: {
@@ -242,7 +242,7 @@ export const uebersichtContent: LandingPageContent = {
         id: "was-kostet",
         question: "Was kostet ein Holzfertighaus?",
         answer:
-          "Der Preis hängt von Größe, Ausstattung und Energieeffizienz ab. Ein schlüsselfertiges Haus beginnt ab 2.350 €/m². Für weitere Infos fragen Sie unseren Hauskatalog oder eine Baubeschreibung an.",
+          "Der Preis hängt von Größe, Ausstattung und Energieeffizienz ab. Ein schlüsselfertiges Haus beginnt ab 2.350 €/m². Für weitere Infos fragen Sie unseren Katalog oder eine Baubeschreibung an.",
       },
     ],
   },
@@ -250,7 +250,7 @@ export const uebersichtContent: LandingPageContent = {
   leadForm: {
     eyebrow: "Ihr persönliches Angebot",
     heading: "Anfordern und",
-    highlight: "Hauskatalog bestellen.",
+    highlight: "Katalog bestellen.",
     lede: "Wir sind für Sie da — stellen Sie uns Ihre Fragen oder fordern Sie Ihr persönliches Angebot an.",
   },
 
@@ -262,6 +262,6 @@ export const uebersichtContent: LandingPageContent = {
       "Sie sind unverbindlich beraten — oder direkt ein Angebot anfordern.",
     tone: "surface",
     primaryCta: { label: "Persönliches Angebot anfragen", href: "/kontakt" },
-    secondaryCta: { label: "Hauskatalog bestellen", href: "/katalog" },
+    secondaryCta: { label: "Katalog bestellen", href: "/katalog" },
   },
 };
