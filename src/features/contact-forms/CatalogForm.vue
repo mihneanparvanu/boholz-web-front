@@ -112,7 +112,7 @@ async function onSubmit() {
       class="submit"
       :disabled="!turnstileToken || !isValid || submitting"
     >
-      {{ submitting ? "Wird gesendet..." : "Katalog bestellen" }}
+      {{ submitting ? "Wird gesendet..." : "Imagebroschüre bestellen" }}
     </button>
   </form>
 

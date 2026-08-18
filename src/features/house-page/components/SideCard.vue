@@ -56,7 +56,7 @@ defineProps<{
         Beratungstermin
       </Button>
       <Button variant="tertiary" size="md" href="/katalog">
-        Katalog bestellen
+        Imagebroschüre bestellen
       </Button>
       <p class="footnote" v-if="model.price && model.isFeatured">
         *Die Preise gelten für die Ausbaustufe „fast fertig“ in der
