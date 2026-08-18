@@ -27,20 +27,20 @@ export const architekturBeats: ArchBeat[] = [
     heading: "Frei gestalten — bis zur letzten Wand.",
     body: "Offener Wohnbereich, separates Homeoffice, Einliegerwohnung oder großzügige Terrasse — Ihr Grundriss folgt Ihrem Leben, nicht einem Katalog. Wir planen die Räume so, wie Sie sie täglich nutzen werden.",
     imageURL: getMediaURL(
-      "/images/models/kubus/0-190/gallery/kubus-0-190-gallery-kubus-190-0-0.webp",
+      "/images/models/einfamilienhaus/32-150-170/gallery/einfamilienhaus-32-150-170-gallery-ehf-02.webp",
     ),
     imageAlt:
-      "BoHolz Kubus 0-190 — modernes Kubushaus mit individuell geplantem Grundriss",
+      "BoHolz Family 150 mit Holzfassade — Einfamilienhaus mit frei geplantem Grundriss",
   },
   {
     eyebrow: "Fassade",
     heading: "Außen, wie Sie es sich vorstellen.",
     body: "Klassisch verputzt, mit Holzakzenten oder vollflächig in Holz — die Fassade definiert den ersten Eindruck. Aus einer abgestimmten Palette wählen Sie Materialien, Farben und Proportionen, die zum Ort passen.",
     imageURL: getMediaURL(
-      "/images/models/kubus/0-166/gallery/kubus-0-166-gallery-kubus-166-0-0.webp",
+      "/images/models/stadtvilla/22-140-000/gallery/stadtvilla-22-140-000-gallery-sv-02.webp",
     ),
     imageAlt:
-      "Moderne Holzfassade eines BoHolz-Hauses — wählbare Materialität für die Außenwirkung",
+      "BoHolz Weitblick 140 mit Holzverschalung — wählbare Materialität für die Außenwirkung",
   },
   {
     eyebrow: "Innen & außen",
@@ -61,4 +61,4 @@ export const nachhaltigkeitImageB = getMediaURL(
   "/images/photography/timber-grain.webp",
 );
 
-export const ctaImage = getMediaURL("/images/brand/brochure-vertical.webp");
+export const ctaImage = getMediaURL("/pdf/boholz-imagebroschuere-cover.webp");
