@@ -24,12 +24,12 @@ const showhouseHeroBySlug = new Map<string, string>(
     }),
 );
 
-// München's hero in the DB duplicates Villingen-Schwenningen. Override to a
-// distinct einfamilienhaus image until the seed is corrected upstream.
-const OFFICE_HERO_OVERRIDES: Record<string, string> = {
-  "vertriebsbuero-muenchen":
-    "/images/models/einfamilienhaus/22-162-190/gallery/einfamilienhaus-22-162-190-gallery-efh-ho-166-22-190-betonoptikfassade.webp",
-};
+// Per-office hero overrides (slug -> image path) for cases where the DB hero
+// isn't the desired card image. Empty now: München previously duplicated
+// Villingen-Schwenningen's hero and was pinned here, but its DB hero is now a
+// distinct image (set per client request 2026-08-18), so the DB is the single
+// source of truth again.
+const OFFICE_HERO_OVERRIDES: Record<string, string> = {};
 
 // Vertriebsbüros + Zentrale come straight from the DB. HQ leads, the rest
 // follow alphabetically by title. Offices with no phone, email, and no agent
