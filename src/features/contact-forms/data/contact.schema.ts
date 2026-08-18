@@ -19,7 +19,6 @@ export const contactFormSections: FormSection[] = [
           { value: "doppelhaus", label: "Doppelhaus" },
           { value: "zweifamilienhaus", label: "Zweifamilienhaus" },
           { value: "mehrfamilienhaus", label: "Mehrfamilienhaus" },
-          { value: "pultdachhaus", label: "Pultdachhaus" },
         ],
       },
       {

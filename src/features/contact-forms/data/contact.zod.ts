@@ -10,7 +10,6 @@ export const contactSchema = z.object({
     "doppelhaus",
     "zweifamilienhaus",
     "mehrfamilienhaus",
-    "pultdachhaus",
   ]),
   livingArea: z.enum(["100-149", "150-200", "200+"]),
   wantsFunding: z.enum(["ja", "nein"]),
