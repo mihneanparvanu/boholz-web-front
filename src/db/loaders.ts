@@ -12,7 +12,9 @@ import type {
   NewsArticle,
 } from "@/db/models";
 import type { HeroSlide } from "@/features/home/hero/hero.types";
-const HIDDEN_CATEGORY_SLUGS: string[] = [];
+// Categories hidden from nav, homepage slider and /hauser filters (client request,
+// 2026-08-18). Reversible: remove the slug to bring the category back.
+const HIDDEN_CATEGORY_SLUGS: string[] = ["pultdachhaus"];
 
 type PivotMediaRow = { media: { path: string } };
 type WithPivotMedia<M extends PivotMediaRow> = { media: M[] };
