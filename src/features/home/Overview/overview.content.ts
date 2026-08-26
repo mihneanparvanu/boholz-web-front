@@ -36,10 +36,10 @@ export const overviewCardsSecondary: OverviewCardData[] = [
     subheading:
       "Diffusionsoffener Holzbau aus PEFC-zertifizierten deutschen Wäldern — atmungsaktiv, langlebig, klimapositiv.",
     image: {
-      url: getMediaURL("/images/photography/timber-grain.webp"),
-      alt: "Detailaufnahme massiver Holzmaserung",
+      url: getMediaURL("/images/photography/log-stack.webp"),
+      alt: "Gestapelte Holzstämme aus zertifizierter Forstwirtschaft",
       width: 2560,
-      height: 893,
+      height: 1280,
     },
   },
   {
