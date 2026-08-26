@@ -58,7 +58,7 @@ export const nachhaltigkeitImageA = getMediaURL(
   "/images/content/advantage/nachhaltigkeit/hero.webp",
 );
 export const nachhaltigkeitImageB = getMediaURL(
-  "/images/photography/timber-grain.webp",
+  "/images/photography/log-stack.webp",
 );
 
 export const ctaImage = getMediaURL("/pdf/boholz-imagebroschuere-cover.webp");
